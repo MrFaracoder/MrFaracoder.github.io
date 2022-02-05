@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/Fara-code.png">
+    <title>Faracoder</title>
+    <link rel="shortcut icon" href="/img/Fara-code.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="@fortawesome/fontawesome-free/css/all.css">
+</head>
+<body onload="myFunction()">
+  <!-- lodader page -->
+  <div class=" bg-Third">
+    <div id="loader"></div>
+    <div  class=" animate-bottom" style="display:none;" id="myDiv">
+      <!-- menu mobail -->
+      <nav>
+        <div class="position-fixed top-45 bottom-0 start-0 end-0 py-4" id="menuMobil" onclick="menu1()">
+          <ul class="list-unstyled container bg-body h-100">
+            <li class="py-8"><a href="#headerMe" class="text-decoration-none h4" onclick="menu1()">خانه</a></li>
+            <li><a href="#aboutMe" class="text-decoration-none h4" onclick="menu1()">درباره من</a></li>
+            <li  class="py-8"><a href="#servicesME" class="text-decoration-none h4" onclick="menu5()">خدمات</a></li>
+            <li><a href="#portfolioMe" class="text-decoration-none h4" onclick="menu1()">کارها</a></li>
+            <li  class="py-8"><a href="#blogMe" class="text-decoration-none h4" onclick="menu1()">وبلاگ</a></li>
+            <!-- <li><a href="#" class="text-decoration-none h4">drop down</a></li> -->
+            <li  class="py-8"><a href="#callMe" class="text-decoration-none h4"  onclick="menu1()">تماس با من</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- start mrfaracoder menu and navbar -->
+      <header id="headerMe">
+        <nav class="position-relative overflow-hidden" id="menu" style="background-image: url(img/mr\ facoder.png);">
+          <div class="position-fixed start-0 end-0"id="mymenu">
+            <div class="container">
+              <div class="row">
+                <div class="col-7 col-lg-4">
+                  <h2>
+                    <a href="#" class="text-decoration-none text-white  d-flex justify-content-start">Faracoder</a>
+                  </h2>
+                </div>
+                <div class="col-5 col-lg-8 align-self-center d-flex justify-content-end">
+                  <a href="#" class=" d-lg-none  h4 m-0 text-decoration-none text-white mb-1 mt-10 w-15" onclick="menuFunction()">
+                    <span id="bars" class="position-relative"><i class="fas fa-bars"></i></span>
+                    <span id="iconClose" class=" position-absolute top-7 "><i class="fas fa-times"></i></span>
+                  </a>
+                  <div class="list-unstyled d-none d-lg-block m-0">
+                    <ul class="nav p-0 d-flex justify-content-end">
+                      <li class="nav-item"><a href="#headerMe" class="text-white text-decoration-none nav-link active"><span class=" pb-8 " id="borderHome">خانه</span></a></li>
+                      <li class="nav-item"><a href="#aboutMe" class="text-white text-decoration-none nav-link active"><span class="pb-8" id="borderAbout">درباره من</span></a></li>
+                      <li class="nav-item"><a href="#servicesME" class="text-white text-decoration-none nav-link active"><span class="pb-8" id="borderServices">خدمات</span></a></li>
+                      <li class="nav-item"><a href="#portfolioMe" class="text-white text-decoration-none nav-link active"> <span class="pb-8" id="borderPortfolio">نمونه کارها</span></a></li>
+                      <li class="nav-item"><a href="#blogMe" class="text-white text-decoration-none nav-link active"><span class="pb-8"  id="borderBlog">وبلاگ</span></a></li>
+                      <!-- <li class="nav-item"><a href="#" class="text-white text-decoration-none nav-link active">drop down</a></li> -->
+                      <li class="nav-item"><a href="#callMe" class="text-white text-decoration-none nav-link active"><span class="pb-8" id="borderCall">تماس با من</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position-absolute top-60  start-0  end-0">
+            <h1 class="text-white text-center">من علی فراهانی هستم</h1>
+            <h3 class="text-white text-center"id="str"></h3>
+          </div>
+        </nav>
+      </header>
+      <!-- end mrfaracoder navbar -->
+      
+      <!-- start mrfaracoder abuot section -->
+      <section class="pt-7" id="aboutMe">
+          <!-- start button scroll  -->
+      <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="p-2 bg-secondary rounded-circle border-0 bottom-15 end-15 position-fixed ">
+          <i class="fas fa-arrow-up text-white d-flex justify-content-center"></i>
+        </button>
+      </div>
+          <!-- end button scroll -->
+      <div class="container">
+        <div class="pt-7  shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="py-1 row">
+            <div class="row col-md-6 mb-4 container pe-1">
+                <div class="col-sm-6 d-flex align-items-center mb-2">
+                  <img src="img/mrfacoder4.jpg" class="w-150" alt= "img">
+                </div>
+                <div class="col-sm-6  pe-1">
+                  <ul class="m-0 p-0 list-unstyled">
+                    <li class="h5 fw-light"><span class="h3 fw-bold">نام :</span> علی فراهانی</li>
+                    <li class="h5 fw-light"><span class="h3 fw-bold"> حرفه :</span> فرانت اند</li>
+                    <li class="h5 fw-light"><span class="h3 fw-bold"> ایمیل :</span> mr.facoder@gmail.com</li>
+                    <li class="h5 fw-light"><span class="h3 fw-bold"> تلفن :</span> 09365153492</li>
+                  </ul>
+                </div>
+                <!-- start my Skill -->
+                <div>
+                  <div>
+                    <h3 class="fw-bold mb-2"> مهارت ها</h3>
+                  </div>
+                  <span class="h5 fw-light">HTML 95%</span>
+                  <div class="progress mt-1 mb-3 rounded-0">
+                    <div id="progress1" class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="h5 fw-light">css 90%</span>
+                  <div class="progress mt-1 mb-3 rounded-0">
+                    <div class="progress-bar" id="progress2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="h5 fw-light">js 50%</span>
+                  <div class="progress mt-1 mb-3 rounded-0">
+                    <div class="progress-bar" id="progress3" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="h5 fw-light">bootstrap 80%</span>
+                  <div class="progress mt-1 mb-3 rounded-0">
+                    <div class="progress-bar" id="progress4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <!-- end my Skill -->
+            </div>
+            <article class="col-md-6">
+              <h2 class="mb-5 title-left position-relative">درباره من</h2>
+              <p class="h5 fw-light mb-2">سلام علی فراهانی هستم برنامه نویس فرانت اند
+                دانشجویی رشته ای مهندسی کامپیوتر از دانشگاه آزاد قم
+                    چندین ساله در حوزه برنامه نویسی فرانت اند فعالیت دارم
+                ممنونم که از وبسایت من دیدن میکنید امیدوارم بتوانم در این راه به شما کمک کنم
+                .</p>
+                <p class="h5 fw-light">
+                  البته اینم بگم که علاقه زیادی به هوش مصنوعی دارم ازونجایی که دنیای هوش مصنوعی خیلی خیلی بزرگ و پیچیده است و همش فکر میکنم که باید وارد این عرصه شم به امید آن روز.
+                </p>
+            </article>
+          </div>
+        </div>
+      </div>
+      </section>
+      <!-- end mrfaracoder abuot section -->
+      
+      <!-- start mrfaracoder SERVICES   -->
+      <section  id="servicesME">
+        <div class="p-7">
+          <h2 class="fw-bold d-flex justify-content-center">خدمات</h2>
+          <span class="h5 fw-light d-flex justify-content-center text-center mb-2">با بهترین کیفیت در خدمت شما هستیم</span>
+          <div class="d-flex justify-content-center mb-2"><span class="w-40 h-5 bg-secondary"></span></div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card  pt-3 mb-5 shadow" id="cervices">
+                <div class="card-body text-center pb-5">
+                  <div class="d-flex justify-content-center" >
+                    <span class="card-title border border-6 border-secondary rounded-circle">
+                      <i class="fas fa-briefcase w-48 h2 m-4"></i>
+                    </span>
+                  </div>
+                  <h3>طراحی و توسعه سایت</h3>
+                  <p class="pt-1">برای کسب و کار خودتان یک سایت با کیفیت عالی طراحی کنید. مهم نیست برای چه کاری، نیاز به یک وب سایت دارید معرفی کسب و کار خودتان، نمایش نمونه کارهایتان یا فروش آنلاین محصولات خودتان. با faracoder می توانید برای هر کاری یک سایت عالی بسازید</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card  pt-3 mb-5 shadow" id="cervices">
+                <div class="card-body text-center pb-5">
+                  <div class="d-flex justify-content-center">
+                    <span class="card-title border border-6 border-secondary rounded-circle">
+                      <i class="far fa-calendar-alt w-48 h2 m-4"></i>
+                    </span>
+                  </div>
+                  <h3>آموزش</h3>
+                  <p class="pt-1">ما در آموزشگاه برنامه نویسی faracoder به طلوعی دیگر باور داریم. faracoder از جمله موسساتی است که به آموزش کارگاهی اعتقاد زیادی دارد؛ این موسسه علاوه بر برگزاری دوره‌های حضوری و مجازی نوع دیگری از آموزش در بستر کارآموزی را هم ارائه می‌دهد.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card  pt-3 mb-5 shadow" id="cervices">
+                <div class="card-body text-center pb-5">
+                  <div class="d-flex justify-content-center">
+                    <span class="card-title border border-6 border-secondary rounded-circle">
+                      <i class="far fa-chart-bar w-48 h2 m-4 "></i>
+                    </span>
+                  </div>
+                  <h3>عکاسی</h3>
+                  <p class="pt-1">عکاسی هنری است که با توجه به ذوق فردی که آن را عکاس می نامیم شکوفا می شود.
+                    در این میان تفاوت عکس خوب و عکس بد در اصولی است که هنرمند عکاس برای خلق تصاویر هنری به کار می گیرد.هر چند وجود قریحه ذاتی در هنر می تواند منجر به خلق آثاری بدیع شود</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card  pt-3 mb-5 shadow" id="cervices">
+                <div class="card-body text-center pb-5">
+                  <div class="d-flex justify-content-center">
+                    <span class="card-title border border-6 border-secondary rounded-circle">
+                      <i class="fas fa-calendar-alt w-48 h2 m-4"></i>
+                    </span>
+                  </div>
+                  <h3>مشاوره</h3>
+                  <p class="pt-1">faracoder با گردهم‌آوری متخصصان کارآزموده و فراهم سازی زیر ساخت تلفنی برای مشاوره شغلی تلفنی سعی در سهولت و آرامش هر چه بیشتر شما دارد. شما می‌توانید در هر نقطه‌ای از کشور که هستید تنها با یک تماس از خدمات مشاوره تلفنی faracoder هنر زندگی بهره مندشوید</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card  pt-3 mb-5 shadow" id="cervices">
+                <div class="card-body text-center pb-5">
+                  <div class="d-flex justify-content-center">
+                    <span class="card-title border border-6 border-secondary rounded-circle">
+                      <i class="fas fa-sun w-48 h2 m-4"></i>
+                    </span>
+                  </div>
+                  <h3>طراحی گرافیک</h3>
+                  <p class="pt-1">طراحی گرافیک یا شاید طراحی گرافیکی صدایی آشنا برای تمام کسانی است که به خوبی می دانند دنیای امروز اگر زیباتر از گذشته شده است این را مدیون افرادی است که خلاقیت و هنرهای خود را که بسیار ارزشمند است به دنیای امروز منتقل کرده اند .</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card  pt-3 mb-5 shadow" id="cervices">
+                <div class="card-body text-center pb-5">
+                  <div class="d-flex justify-content-center">
+                    <span class="card-title border border-6 border-secondary rounded-circle">
+                      <i class="fas fa-binoculars w-48 h2 m-4"></i>
+                    </span>
+                  </div>
+                  <h3>بازاریابی</h3>
+                  <p class="pt-1">بسیاری عقیده دارند فروش یک مهارت ذاتی است و فردی در این حوزه موفق است که استعداد فروش داشته باشد.اکثر کارفرماها برای استخدام، مهارت‌ها و ویژگی‌هایی را در نظر می‌گیرند که در امر فروش و مذاکره تاثیر زیادی دارند. برخی از این ویژگی‌ها، توانایی‌ها و مهارت‌های فردی است.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end mrfaracoder SERVICES  -->
+      
+      <!-- start blue abuot mrfaracoder blue section2 -->
+      <div id="img" style="background-image: url(img/counters-bg.jpg);">
+      <div class="w-100 opacity-75 bg-secondary">
+        <div class="container">
+          <div class="row py-9">
+            <div class="col-md-3 mb-1">
+              <div class="d-flex justify-content-center">
+                <span class="border border-6 border-body rounded-circle">
+                  <i class="fas fa-check text-light h2 m-2"></i>
+                </span>
+              </div>
+              <span class="h2 text-light d-flex justify-content-center pt-1 m-0">15</span>
+              <span class="h4 text-light d-flex justify-content-center">WORKS COMPLETED</span>
+            </div>
+            <div class="col-md-3 mb-1">
+              <div class="d-flex justify-content-center">
+                <span class="border border-6 border-body rounded-circle">
+                  <i class="fas fa-database text-light h2 m-2"></i>
+                </span>
+              </div>
+              <span class="h2 text-light d-flex justify-content-center pt-1 m-0">2</span>
+              <span class="h4 text-light d-flex justify-content-center">YEARS OF EXPERIENCE</span>
+            </div>
+            <div class="col-md-3 mb-1">
+              <div class="d-flex justify-content-center">
+                <span class="border border-6 border-body rounded-circle">
+                  <i class="fas fa-address-book text-light h2 m-2"></i>
+                </span>
+              </div>
+              <span class="h2 text-light d-flex justify-content-center pt-1 m-0">16</span>
+              <span class="h4 text-light d-flex justify-content-center">TOTAL CLIENTS</span>
+            </div>
+            <div class="col-md-3 mb-1">
+              <div class="d-flex justify-content-center">
+                <span class="border border-6 border-body rounded-circle">
+                  <i class="fas fa-medal text-light h2 m-2"></i>
+                </span>
+              </div>
+              <span class="h2 text-light d-flex justify-content-center pt-1 m-0">2</span>
+              <span class="h4 text-light d-flex justify-content-center">TOTAL CLIENTS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- end blue abuot mrfacoder blue section2 -->
+      
+      <!-- strt PORTFOLIO -->
+      <section id="portfolioMe">
+        <div class="p-7">
+          <h2 class="fw-bold d-flex justify-content-center">نمونه کارها</h2>
+          <span class="h5 fw-light d-flex justify-content-center text-center mb-2">به آنچه که فکر می کنید، این جا پیدایش می کنید</span>
+          <div class="d-flex justify-content-center mb-2"><span class="w-40 h-5 bg-secondary"></span></div>
+        </div>
+        <!-- <div class="container">
+          <div class="row mb-5">
+            <div class="col-sm-4">
+              <div class="card shadow">
+                <div class="img-hover-zoom"><a href=""><img src="img/work-1.jpg" class="card-img-top" alt="..."></a></div>
+                <div class="card-body position-relative">
+                  <h5 class="card-title">Loreda Cuno Nere</h5>
+                  <p class="card-text m-0"><span class="text-secondary">Web Design </span>/ 18 Sep. 2018</p>
+                  <a href="#" class="text-decoration-none p-0 position-absolute bottom-7 start-7"><i class="fas fa-plus-circle text-secondary h3 m-0"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow">
+                <div class="img-hover-zoom"><a href=""><img src="img/work-2.jpg" class="card-img-top" alt="..."></a></div>
+                <div class="card-body position-relative">
+                  <h5 class="card-title">Loreda Cuno Nere</h5>
+                  <p class="card-text m-0"><span class="text-secondary">Web Design </span>/ 18 Sep. 2018</p>
+                  <a href="#" class="text-decoration-none p-0 position-absolute bottom-7 start-7"><i class="fas fa-plus-circle text-secondary h3 m-0"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow">
+                <div class="img-hover-zoom"><a href=""><img src="img/work-3.jpg" class="card-img-top" alt="..."></a></div>
+                <div class="card-body position-relative">
+                  <h5 class="card-title">Loreda Cuno Nere</h5>
+                  <p class="card-text m-0"><span class="text-secondary">Web Design </span>/ 18 Sep. 2018</p>
+                  <a href="#" class="text-decoration-none p-0 position-absolute bottom-7 start-7"><i class="fas fa-plus-circle text-secondary h3 m-0"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-sm-4">
+              <div class="card shadow">
+                <div class="img-hover-zoom"><a href=""><img src="img/work-4.jpg" class="card-img-top" alt="..."></a></div>
+                <div class="card-body position-relative">
+                  <h5 class="card-title">Loreda Cuno Nere</h5>
+                  <p class="card-text m-0"><span class="text-secondary">Web Design </span>/ 18 Sep. 2018</p>
+                  <a href="#" class="text-decoration-none p-0 position-absolute bottom-7 start-7"><i class="fas fa-plus-circle text-secondary h3 m-0"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow">
+                <div class="img-hover-zoom"><a href=""><img src="img/work-5.jpg" class="card-img-top" alt="..."></a></div>
+                <div class="card-body position-relative">
+                  <h5 class="card-title">Loreda Cuno Nere</h5>
+                  <p class="card-text m-0"><span class="text-secondary">Web Design </span>/ 18 Sep. 2018</p>
+                  <a href="#" class="text-decoration-none p-0 position-absolute bottom-7 start-7"><i class="fas fa-plus-circle text-secondary h3 m-0"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow">
+                <div class="img-hover-zoom"><a href=""><img src="img/work-6.jpg" class="card-img-top" alt="..."></a></div>
+                <div class="card-body position-relative">
+                  <h5 class="card-title">Loreda Cuno Nere</h5>
+                  <p class="card-text m-0"><span class="text-secondary">Web Design </span>/ 18 Sep. 2018</p>
+                  <a href="#" class="text-decoration-none p-0 position-absolute bottom-7 start-7"><i class="fas fa-plus-circle text-secondary h3 m-0"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+      <!-- end PORTFOLIO -->
+      
+      <!-- start blue abuot mrfacoder blue section3 -->
+      <div class="position-relative">
+      <div id="img" style="background-image: url(img/overlay-bg.jpg);" >
+        <div class="w-100 h-550 opacity-75 bg-secondary"></div>
+      </div>
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="my-9">
+          <div class="d-flex justify-content-center">
+            <img class="w-150 h-150 rounded-circle" src="img/mr facoder2 .jpg" alt="">
+          </div>
+          <h3 class="d-flex justify-content-center mt-1 text-light">Faracoder</h3>
+          <p class="d-flex justify-content-center text-light">علی فراهانی برنامه نویس خلاق و جوان</p>
+        </div>
+      </div>
+      </div>
+      <!-- end blue abuot mrfacoder blue section3 -->
+      
+      <!-- start BLOG -->
+      <section id="blogMe">
+      <div class="p-7">
+        <h2 class="fw-bold d-flex justify-content-center">وبلاگ</h2>
+        <span class="h5 fw-light d-flex justify-content-center text-center mb-2">همیشه  و در همه جا پر از خلاقیت !</span>
+        <div class="d-flex justify-content-center mb-2"><span class="w-40 h-5 bg-secondary"></span></div>
+      </div>
+      <!-- <div class="container mb-9">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card shadow">
+              <div class="position-relative">
+                <a href="#"><img src="img/work-6.jpg" class="card-img-top" alt="..."></a>
+                <span class="bg-secondary text-center position-absolute top-100 start-50 translate-middle w-110 fs-6 rounded">WEB DESIGN</span>
+              </div>
+              <div class="card-body mt-1">
+                <a href="#" class="text-decoration-none" id="blogHover">
+                  <h5 class="card-title">Special title treatment</h5>
+                </a>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="px-8 border-top border-muted bg-Third shadow">
+                <div class="row">
+                  <div class="col-6 col-sm-12 col-md-8 p-0 mt-10">
+                    <a href="#" class="text-black-50 text-decoration-none me-8"><img src="img/mr facoder2 .jpg" class="p-8 w-40 h-40 rounded-circle" alt="#"><span id="blogHover">Faracoder</span></a>
+                  </div>
+                  <div class="col-6 col-sm-12 col-md-4 mt-8 d-flex justify-content-end">
+                    <span class="text-black-50">10min</span>
+                    <span><i class="far fa-clock text-black-50 pt-10"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card shadow">
+              <div class="position-relative">
+                <a href="#"><img src="img/work-5.jpg" class="card-img-top" alt="..."></a>
+                <span class="bg-secondary text-center position-absolute top-100 start-50 translate-middle w-110 fs-6 rounded">WEB DESIGN</span>
+              </div>
+              <div class="card-body mt-1">
+                <a href="#" class="text-decoration-none" id="blogHover">
+                  <h5 class="card-title">Special title treatment</h5>
+                </a>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="px-8 border-top border-muted bg-Third shadow">
+                <div class="row">
+                  <div class="col-6 col-sm-12 col-md-8 p-0 mt-10">
+                    <a href="#" class="text-black-50 text-decoration-none me-8"><img src="img/mr facoder2 .jpg" class="p-8 w-40 h-40 rounded-circle" alt="#"><span id="blogHover">Faracoder</span></a>
+                  </div>
+                  <div class="col-6 col-sm-12 col-md-4 mt-8 d-flex justify-content-end">
+                    <span class="text-black-50">10min</span>
+                    <span><i class="far fa-clock text-black-50 pt-10"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card shadow">
+              <div class="position-relative">
+                <a href="#"><img src="img/work-6.jpg" class="card-img-top" alt="..."></a>
+                <span class="bg-secondary text-center position-absolute top-100 start-50 translate-middle w-110 fs-6 rounded">WEB DESIGN</span>
+              </div>
+              <div class="card-body mt-1">
+                <a href="#" class="text-decoration-none" id="blogHover">
+                  <h5 class="card-title">Special title treatment</h5>
+                </a>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="px-8 border-top border-muted bg-Third shadow">
+                <div class="row">
+                  <div class="col-6 col-sm-12 col-md-8 p-0 mt-10">
+                    <a href="#" class="text-black-50 text-decoration-none me-8"><img src="img/mr facoder2 .jpg" class="p-8 w-40 h-40 rounded-circle" alt="#"><span id="blogHover">Faracoder</span></a>
+                  </div>
+                  <div class="col-6 col-sm-12 col-md-4 mt-8 d-flex justify-content-end">
+                    <span class="text-black-50">10min</span>
+                    <span><i class="far fa-clock text-black-50 pt-10"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      </section>
+      <!-- end BLOG -->
+      
+      <!-- start footer section -->
+      <section id="callMe">
+      <div class="position-relative">
+        <div id="img" style="background-image: url(img/overlay-bg.jpg);">
+          <div class="bg-secondary opacity-75 " id="message"></div>
+        </div>
+        <div class="position-absolute top-50 start-0 end-0 translate-middle-y">
+          <div class="mt-5">
+            <div class="container">
+              <div class="bg-white shadow">
+                <div class="container row mb-5">
+                  <div class="col-md-6">
+                    <h3 class="pt-5 m-0 title-left position-relative">ارتباط با من</h2>
+                    <form action="">
+                      <input type="text" class=" border border-1  w-100 p-10 mt-5" placeholder="نام" required>
+                      <input type="email" class="border border-1 w-100 p-10 my-2" placeholder="ایمیل" required>
+                      <input type="text" class="border border-1 w-100 p-10 mb-2" placeholder="موضوع" required>
+                      <textarea  id="textarea" class="border border-1 w-100 p-10"  placeholder="پیام" required></textarea>
+                      <div class="d-flex justify-content-center mt-3 mb-2"><button value="Submit" type="submit" class="btn btn-secondary btn-lg px-5 py-8 rounded-pill">ارسال پیام</button></div>
+                    </form>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="pt-5 m-0 title-left position-relative">در تماس باشید</h3>
+                    <p class="mt-5 fw-light">faracoder با محوریت گسترش توسعه وب و تکنولوژی در سال 1398 شروع به کار کرد. این شرکت با ارائه خدمات طراحی سایت ، توسعه و بازاریابی ، سرور های میزبانی ، راهکاری نوآورانه و نیز پایبندی به اخلاق حرفه ای در این حوزه رسالت خود را خلق لبخند رضایت کاربران خود می داند. faracoder با بیش از 3 سال تجربه با بکارگیری از تکنولوژی های برتر وب ، در نظر دارد دلگرمی و حس رضایتمندی را برای کسب و کارها به ارمغان بیاورد .</p>
+                    <div>
+                      <i class="fas fa-map-marker-alt ms-1 pe-10 w-15 text-secondary"></i>
+                      <span class="fw-light">Qom ,Iran</span>
+                    </div>
+                    <div>
+                      <i class="fas fa-mobile-alt ms-1 pe-10 w-15 text-secondary"></i>
+                      <span class="fw-light">09365153492</span>
+                    </div>
+                    <div>
+                      <i class="fas fa-envelope ms-1 w-15 text-secondary"></i>
+                      <span class="fw-light">Mr.facoder@gmail.com</span>
+                    </div>
+                    <div class="pt-5 mb-5">
+                      <div class="d-inline">
+                        <span id="footerIcon" class="border border-3 border-secondary rounded-circle p-8 ms-2">
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                        </span>
+                      </div>
+                      <div class="d-inline">
+                        <span id="footerIcon" class="border border-3 border-secondary rounded-circle p-8 ms-2">
+                          <a href="https://www.instagram.com/ali_worthy/?hl=en" target="blank"><i class="fab fa-instagram w-15"></i></a>
+                        </span>
+                      </div>
+                      <div class="d-inline">
+                        <span id="footerIcon" class="border border-3 border-secondary rounded-circle p-8 ms-2">
+                          <a href="#"><i class="fab fa-twitter w-15"></i></a>
+                        </span>
+                      </div>
+                      <div class="d-inline">
+                        <span id="footerIcon" class="border border-3 border-secondary rounded-circle p-8 px-1">
+                          <a href="https://www.linkedin.com/in/ali-farahani-1a8695229" target="blank"><i class="fab fa-linkedin w-15"></i></a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer in -->
+      <div class=" h-110" id="footer">
+        <h3 class="d-flex justify-content-center p-1 pb-0 text-light">Faracoder</h3>
+        <span class="d-flex justify-content-center text-light">تمامی حقوق محفوظ است</span>
+      </div>
+      </section>
+      <!-- end footer section -->
+    </div>
+  </div>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

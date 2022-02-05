@@ -1,0 +1,161 @@
+//navbar and home section
+#menu {
+    width: 100%; 
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+// blue section img
+#img{
+    width: 100%; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+//menu big size
+#mymenu{
+    z-index: 999;
+}
+//botton scrolltop
+#myBtn{
+    z-index: 999999;
+}
+// hover sevices section
+#cervices {
+    border-radius: 16px;
+    &:hover{
+        span{
+            transition: 1s;
+            background-color:#0078ff ;
+            border-color:#dee2e6 !important;
+        }
+        i{
+            transition: 1s;
+            color: white;
+        }
+    }
+}
+// hover icon in footer
+#footerIcon{
+    transition: 1s;
+    &:hover{
+        background-color:#0078ff ;
+        border-color:#dee2e6 !important;
+        i{
+            transition: 1s;
+            color: white;
+        }
+    }
+}
+
+ //start about me section 
+.progress {
+    height: 11.5px;
+}
+#progress1 {
+    width: 95%;
+} 
+#progress2 {
+    width: 90%;
+} 
+#progress3 {
+    width: 50%;
+} 
+#progress4 {
+    width: 80%;
+}
+ //end about me section 
+//  blue underline in sections
+.title-left:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 110px;
+    bottom: -12px;
+}
+// height textarea
+#textarea {
+    resize: vertical;
+    height: 140px;
+}
+// hover blog
+#blogHover{
+    transition: 1s;
+    &:hover{
+        color: #0078ff;
+    }
+}
+// start hover portfolio
+#portfolio{
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+.img-hover-zoom {
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    img {    
+        transition: transform .9s ease;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+}
+// end hover portfolio
+#footer{
+    background-color:#0062d3;
+}
+#message {
+    height: 1150px;
+    @media only screen and (min-width: 768px){
+        height: 700px;
+    }
+}
+//start menu mobile size
+#iconClose {
+    display: none;
+}
+#menuMobil {
+    background-color: #464646;
+    z-index: 999999999999;
+    display: none;
+    li{
+      &:hover{
+          a{
+              color: #0078ff;
+          }
+      }  
+    }
+}
+// end menu  mobile sixe
+
+// start loader page
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  #myDiv {
+    display: none;
+  }
+//   start loader page
